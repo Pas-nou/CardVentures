@@ -6,7 +6,6 @@ footer {
     position: fixed;
     bottom: 0;
     gap: 100px;
-    background-color: green;
     height: 100px;
 }
 
@@ -14,7 +13,7 @@ footer {
     width: 150px;
     height: 38;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 1px solid beige;
     text-align: center;
     padding: 10px;
     font-size: 22px;
