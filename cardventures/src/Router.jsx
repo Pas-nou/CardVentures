@@ -28,7 +28,7 @@ const router = createBrowserRouter([
                 element: <Visualisation />,
             },
         ],
-        errorElement: <h1>not found</h1>,
+        errorElement: <h1>Oupsi, je crois qu'il y a une petite erreur !</h1>,
     },
 ]);
 

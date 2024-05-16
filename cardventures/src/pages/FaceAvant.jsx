@@ -1,5 +1,3 @@
-import Picture from "../components/Picture";
-import Text from "../components/Text";
 import Footer from "../components/Footer";
 import "../styles/face-avant.css"
 function FaceAvant() {
@@ -24,8 +22,6 @@ function FaceAvant() {
 
   return (
     <>
-      <Picture />
-      <Text />
       <div className="picture">
       {picture.map((value) => (
         <p key={value}><img src={value} /></p>

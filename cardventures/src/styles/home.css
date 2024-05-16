@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 100px
+    gap: 100px;
 }
 
 .logo {
@@ -20,6 +20,11 @@
     padding: 0 16px;
 }
 
+.menu {
+    z-index: 100;
+    background-color: none;
+}
+
 .homepage-button {
     width: 311px;
     height: 70px;
@@ -28,23 +33,35 @@
     font-size: 36px;
     border: 2px solid var(--light-color);
     cursor: pointer;
+    transition: all 0.8s ease;
 }
 
 .homepage-button:hover {
     background-color: var(--light-color);
     color: var(--dark-color);
+    font-size: 40px;
     font-weight: 800px;
     font-style: bold;
+    transform: scale(0.9)
 }
+
+.homepage-button:active {
+    transform: scale(0.8);
+}
+
+.styles_wrapper {
+    overflow: visible !important;
+}
+
 
 @media screen and (max-width: 480px) {
-    
-.homepage-title {
-    font-size: 25px;
-    text-align: center;
-}
 
-    .logo{
+    .homepage-title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .logo {
         width: 90%;
     }
 
@@ -58,7 +75,7 @@
     .homepage {
         gap: 100px;
     }
-    
+
     .homepage-title {
         text-align: center;
     }
@@ -68,10 +85,11 @@
     .homepage {
         gap: 100px;
     }
-    
+
     .homepage-title {
         text-align: center;
     }
+
     .el-bottom-homepage {
         gap: 100px;
     }
