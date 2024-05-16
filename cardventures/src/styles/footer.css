@@ -1,5 +1,5 @@
 footer {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,6 +7,8 @@ footer {
     bottom: 0;
     gap: 100px;
     height: 100px;
+    background-color: var --(dark-color);
+    z-index: 2;
 }
 
 .footer-btn {
@@ -33,13 +35,7 @@ footer {
 .active {
     pointer-events: none;
     color: rgb(170, 169, 169);
-
 }
 
 
-/* !a transferer dans CSS globale  */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+var --(dark-color)
