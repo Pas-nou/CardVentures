@@ -1,4 +1,4 @@
-import Footer from "../compenents/Footer";
+import Footer from "../components/Footer";
 
 function FaceArriere(){
     return<h1>coucou FaceArriere</h1>
