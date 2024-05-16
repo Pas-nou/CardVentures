@@ -1,7 +1,13 @@
+import TextCard from "../components/TextCard";
 import Footer from "../components/Footer";
 
-function FaceArriere(){
-    return<h1>coucou FaceArriere</h1>
+function FaceArriere() {
+  return (
+    <>
+      <TextCard />
+      <Footer />
+    </>
+  );
 }
 
 export default FaceArriere;
