@@ -1,6 +1,8 @@
+import Footer from "../compenents/Footer";
+
 function Home
 (){
-    return <h1>coucou home</h1>
+    return <Footer/>
 }
 
 export default Home;
