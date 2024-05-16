@@ -20,7 +20,7 @@ const router = createBrowserRouter([
                 element: <FaceAvant />,
             },
             {
-                path: "faceArriere",
+                path: "face-arriere",
                 element: <FaceArriere />,
             },
             {
