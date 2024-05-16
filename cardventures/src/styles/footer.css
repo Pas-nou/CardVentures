@@ -6,6 +6,7 @@ footer {
     position: fixed;
     bottom: 0;
     gap: 100px;
+
     height: 100px;
     background-color: var --(dark-color);
     z-index: 2;
@@ -13,13 +14,12 @@ footer {
 
 .footer-btn {
     width: 150px;
-    height: 38;
-    border-radius: 10px;
-    border: 1px solid beige;
+    border-radius: 20px;
     text-align: center;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.295);
     font-size: 22px;
-    color: beige;
+    color: white;
     text-decoration: none;
     transition: 0.25s;
 }
