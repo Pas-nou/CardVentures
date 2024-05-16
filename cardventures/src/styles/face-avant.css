@@ -1,3 +1,7 @@
+.title-face-avant {
+  text-align: center;
+}
+
 .affich-picture,
 .affich-card {
   display: flex;
@@ -8,15 +12,19 @@
   align-items: stretch;
 }
 
+.affich-picture > figure {
+  margin: 0;
+  padding: 0;
+}
+
 .affich-picture > figure > img {
   width: 100px;
   height: 75px;
   margin: 0;
   padding: 0;
-  border-radius: 20px;
+  border-radius: 50%;
 }
 
-.affich-picture > figure {
-  margin: 0;
-  padding: 0;
+.affich-picture > figure > img:hover {
+  cursor: pointer;
 }

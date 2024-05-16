@@ -5,7 +5,11 @@ import Text from "../components/Text";
 import Footer from "../components/Footer";
 import "../styles/face-avant.css";
 function FaceAvant() {
-  const [img, setImg] = useState([]);
+  const min = Math.ceil(0);
+  const max = Math.floor(images.length);
+
+  const i = Math.floor(Math.random() * (max - min)) + min;
+  const [img, setImg] = useState([images[i].src]);
 
   const handleClic = (pict) => {
     setImg(pict);
@@ -13,12 +17,14 @@ function FaceAvant() {
 
   return (
     <>
+    <h1 className="title-face-avant">Photographie :</h1>
+    <h2>Choisissez la photo qui vous convient :</h2>
       <section className="affich-card">
         <article className="image">
           <Picture image={img} />
         </article>
         <article className="text">
-          <Text messageEntrer={""} />
+          <Text messageEnter={"Dans la prochaine étape vous pourrez rédiger votre message ..."}/>
         </article>
       </section>
       <section>

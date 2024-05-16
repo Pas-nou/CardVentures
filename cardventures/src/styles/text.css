@@ -1,5 +1,11 @@
 .text {
-  width: 1fr;
-  background-color: red;
-  display: inline-block;
+  width: 600px;
+  height:400px;
+  display: block;
+  padding:2rem;
+  background: #808b96;
+  border-radius: 20px;
+  line-height: 400px;
+  text-align: center;
+  font-weight: bold;
 }

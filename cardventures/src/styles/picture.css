@@ -1,9 +1,12 @@
 .picture {
   width: 1fr;
-  margin:0;
+  margin: 0;
+  padding: 2rem;
+  background-color: #808b96;
+  border-radius: 20px;
 }
 .picture > img {
-  max-width: 800px;
-  min-width: 400px;
-  margin:0;
+  width: 600px;
+  height: 400px;
+  margin: 0;
 }
