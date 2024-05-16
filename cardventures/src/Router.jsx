@@ -1,4 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
+
+import App from "./App";
 import Home from "./pages/Home";
 import FaceAvant from "./pages/FaceAvant";
 import FaceArriere from "./pages/FaceArriere";
