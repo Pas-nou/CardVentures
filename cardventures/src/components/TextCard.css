@@ -3,14 +3,14 @@
   margin: 0;
   padding: 210px;
   align-items: center;
+ 
 }
 
 .text {
   display: flex;
   flex-direction: column;
-
-  
 }
+
 button {
   border-radius: 10px;
 }
