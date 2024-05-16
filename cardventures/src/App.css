@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Coming+Soon&display=swap');
+
+/* TODO ----VARIABLES CSS---- */
+
+:root {
+
+    /** ----COLORS---- */
+
+    --dark-color: #2B4D50;
+    --light-color: #F1F1D9;
+    --median-dark-green: #337A84;
+    --median-light-green: #65B6B9;
+
+    /** ----FONTS---- */
+
+    --principal-font: "Acme", sans-serif;
+    --secondary-font: "Coming Soon";
+}
+
+
+/* TODO ----GLOBAL CSS---- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: var(--dark-color);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--principal-font);
+    color: var(--light-color);
+}
+
+p, button {
+    font-family: var(--secondary-font);
+}
