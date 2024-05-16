@@ -17,16 +17,26 @@ function FaceAvant() {
 
   return (
     <>
-    <h1 className="title-face-avant">Photographie :</h1>
-    <h2>Choisissez la photo qui vous convient :</h2>
+      <h1 className="title-face-avant">Photographie :</h1>
+      <h2>Choisissez la photo qui vous convient :</h2>
       <section className="affich-card">
         <article className="image">
           <Picture image={img} />
         </article>
         <article className="text">
-          <Text messageEnter={"Dans la prochaine étape vous pourrez rédiger votre message ..."}/>
+          <Text
+            messageEnter={
+              "Dans la prochaine étape vous pourrez rédiger votre message ..."
+            }
+          />
         </article>
       </section>
+      <div className="button-picture">
+        <form action="face-arriere" method="get">
+          <input type="hidden" value={img} name="picture" />
+          <button type="submit">validez le choix de votre photo</button>
+        </form>
+      </div>
       <section>
         <article className="affich-picture">
           {images.map((value) => (

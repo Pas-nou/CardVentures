@@ -2,7 +2,7 @@ import "../styles/text.css";
 function Text({ messageEnter }) {
   return (
     <>
-      {messageEnter}
+      <p>{messageEnter}</p>
     </>
   );
 }
