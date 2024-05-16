@@ -1,5 +1,11 @@
+import Footer from "../components/Footer";
+
 function Visualisation(){
-    return<h1>coucou Visualisation</h1>
+    return(
+        
+        <Footer />
+        
+    )
 }
 
 export default Visualisation;
