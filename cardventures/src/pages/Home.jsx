@@ -1,7 +1,6 @@
 function Home
 (){
-    return
+    return <h1>coucou home</h1>
 }
 
-export default Home
-;
+export default Home;
