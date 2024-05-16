@@ -4,9 +4,18 @@ import "../styles/footer.css";
 function Footer() {
     return (
         <footer>
-            <NavLink to="/" className="footer-btn">home</NavLink>
-            <NavLink to="/face-avant" className="footer-btn">selecte image</NavLink>
-            <NavLink to="/face-arriere" className="footer-btn">créer ton texte</NavLink>
+            <NavLink to="/">
+                {" "}
+                <button className="footer-btn" >accueil</button>{" "}
+            </NavLink>
+            <NavLink to="/face-avant">
+                {" "}
+                <button className="footer-btn">les images</button>{" "}
+            </NavLink>
+            <NavLink to="/face-arriere">
+                {" "}
+                <button className="footer-btn">le texte</button>{" "}
+            </NavLink>
         </footer>
     );
 }
