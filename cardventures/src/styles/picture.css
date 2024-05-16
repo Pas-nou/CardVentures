@@ -1,0 +1,9 @@
+.picture {
+  width: 1fr;
+  margin:0;
+}
+.picture > img {
+  max-width: 800px;
+  min-width: 400px;
+  margin:0;
+}
