@@ -1,7 +1,42 @@
-footer{
-    width: 100%;
+footer {
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 0;
+    gap: 100px;
+
+    height: 100px;
+    background-color: var --(dark-color);
+    z-index: 2;
 }
+
+.footer-btn {
+    width: 150px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.295);
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.footer-btn:hover {
+    background-color: rgba(255, 255, 255, 0.295);
+    color: black;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.288);
+
+}
+
+.active {
+    pointer-events: none;
+    color: rgb(170, 169, 169);
+}
+
+
+
+
