@@ -30,16 +30,22 @@ function TextCard() {
                     className="input-text"
                     name="lastName, firstName"
                     placeholder="Nom & Prénom dest."
+                    maxLength="25"
+
                 />
                 <input
                     className="input-text"
                     name="adress"
                     placeholder="Adresse"
+                    maxLength="70"
+
                 />
                 <input
                     className="input-text"
                     name="lastName, firstName, sender"
                     placeholder="Nom & Prénom Expé."
+                    maxLength="25"
+
                 />
                 <NavLink to="/visualisation">
                     <button className="button"> Visualiser </button>

@@ -23,7 +23,7 @@ function PreviewCard() {
                         alt="timbre"
                     />
                     <p>nom dest.</p>
-                    <p>adress dest.</p>
+                    <p className="p-addres">adressdthyjhdthyjtyukyilujdtyuk dest.</p>
                 </div>
             </div>
         </section>

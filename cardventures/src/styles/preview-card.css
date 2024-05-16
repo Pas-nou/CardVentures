@@ -30,9 +30,10 @@
 }
 .carte-preview-r {
     display: flex;
-    padding: 30px;
+    padding: 10px;
     justify-content: end;
     align-items: center;
+    max-width: 40%;
 }
 
 .preview-msg-l {
@@ -64,10 +65,18 @@
     padding-right: 10px;
 }
 
+.p-addres{
+    width: 100px;
+}
+
 .timbre {
     width: 90px;
     position: absolute;
     top: 70px;
     right: 400px;
     /* display: none; */
+}
+
+p{
+    overflow-wrap: break-word;
 }
