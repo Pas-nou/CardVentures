@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import transition from "../transition";
 import PreviewCard from "../components/PreviewCard";
 
 
@@ -11,4 +12,4 @@ function Visualisation() {
     );
 }
 
-export default Visualisation;
+export default transition(Visualisation);

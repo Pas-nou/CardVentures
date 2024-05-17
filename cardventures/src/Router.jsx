@@ -1,5 +1,7 @@
 import React from 'react'
 import { createBrowserRouter } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+
 
 import App from "./App";
 import Home from "./pages/Home";
@@ -14,19 +16,23 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home />,
+                element: <AnimatePresence mode={'wait'}>
+                    <Home />
+                    </AnimatePresence>,
             },
             {
                 path: "face-avant",
-                element: <FaceAvant />,
+                element: <AnimatePresence mode={'wait'}>
+                    <FaceAvant />
+                    </AnimatePresence>,
             },
             {
                 path: "face-arriere",
-                element: <FaceArriere />,
+                element: <AnimatePresence mode={'wait'}><FaceArriere /></AnimatePresence>,
             },
             {
                 path: "visualisation",
-                element: <Visualisation />,
+                element: <AnimatePresence mode={'wait'}><Visualisation /></AnimatePresence>,
             },
         ],
         errorElement: <h1>Oupsi, je crois qu'il y a une petite erreur !</h1>,

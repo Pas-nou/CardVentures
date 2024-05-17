@@ -1,4 +1,5 @@
 import { useState } from "react";
+import transition from "../transition";
 import TextCard from "../components/TextCard";
 import Footer from "../components/Footer";
 import PreviewCard from "../components/PreviewCard";
@@ -25,4 +26,4 @@ function FaceArriere() {
     );
 }
 
-export default FaceArriere;
+export default transition(FaceArriere);
