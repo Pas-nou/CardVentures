@@ -1,12 +1,22 @@
 import { NavLink } from "react-router-dom";
-import "../styles/footer.css"
+
+import "../styles/footer.css";
 
 function Footer() {
     return (
         <footer>
-            <NavLink to="/">home</NavLink>
-            <NavLink to="/face-avant">page 1</NavLink>
-            <NavLink to="/face-arriere">page 2</NavLink>
+            <NavLink to="/">
+                {" "}
+                <button className="footer-btn" >accueil</button>{" "}
+            </NavLink>
+            <NavLink to="/face-avant">
+                {" "}
+                <button className="footer-btn">les images</button>{" "}
+            </NavLink>
+            <NavLink to="/face-arriere">
+                {" "}
+                <button className="footer-btn">le texte</button>{" "}
+            </NavLink>
         </footer>
     );
 }

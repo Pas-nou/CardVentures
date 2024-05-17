@@ -2,6 +2,7 @@ import { useState } from "react";
 import { images } from "../data";
 import Picture from "../components/Picture";
 import Text from "../components/Text";
+
 import Footer from "../components/Footer";
 import "../styles/face-avant.css";
 function FaceAvant() {
@@ -17,6 +18,7 @@ function FaceAvant() {
 
   return (
     <>
+
       <h1 className="title-face-avant">Photographie :</h1>
       <h2>Choisissez la photo qui vous convient :</h2>
       <section className="affich-card">
@@ -36,6 +38,13 @@ function FaceAvant() {
           <input type="hidden" value={img} name="picture" />
           <button type="submit">validez le choix de votre photo</button>
         </form>
+
+
+      <div className="picture">
+      {picture.map((value) => (
+        <p key={value}><img src={value} /></p>
+      ))}
+
       </div>
       <section>
         <article className="affich-picture">

@@ -1,7 +1,36 @@
-footer{
-    width: 100%;
+footer {
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 0;
+    gap: 100px;
+
+    height: 100px;
+    background-color: var --(dark-color);
+    z-index: 2;
 }
+
+.footer-btn {
+    width: 311px;
+    height: 70px;
+    border-radius: 20px;
+    color: var(--light-color);
+    font-size: 36px;
+    border: 2px solid var(--light-color);
+    transition: 0.25s;
+}
+
+.footer-btn:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-weight: 800px;
+    font-style: bold;
+}
+
+.active {
+    pointer-events: none;
+    filter: blur(1.5px);
+}
+

@@ -49,3 +49,25 @@
   color: #808b96;
   cursor: pointer;
 }
+=======
+.picture {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.picture > p > img {
+  width: 400px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+}
+
+.picture > p {
+  margin: 0;
+  padding: 0;
+}
