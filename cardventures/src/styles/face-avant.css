@@ -1,3 +1,52 @@
+.title-face-avant {
+  text-align: center;
+}
+
+.affich-picture,
+.affich-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.affich-picture > figure {
+  margin: 0;
+  padding: 0;
+}
+
+.affich-picture > figure > img {
+  width: 100px;
+  height: 75px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.affich-picture > figure > img:hover {
+  cursor: pointer;
+}
+
+.button-picture {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.button-picture > form > button {
+  background: #808b96;
+  color: azure;
+}
+
+.button-picture > form > button:hover {
+  background: azure;
+  color: #808b96;
+  cursor: pointer;
+}
+=======
 .picture {
   display: flex;
   flex-wrap: wrap;
