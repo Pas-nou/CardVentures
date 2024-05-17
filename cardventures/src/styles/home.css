@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: center;
     gap: 100px;
+    background-color: var(--dark-color);
+    overflow: hidden;
 }
 
 .logo {
@@ -21,8 +23,7 @@
 }
 
 .menu {
-    z-index: 100;
-    background-color: none;
+    background-color: transparent;
 }
 
 .homepage-button {
@@ -33,7 +34,11 @@
     font-size: 36px;
     border: 2px solid var(--light-color);
     cursor: pointer;
-    transition: all 0.8s ease;
+    transition: all 0.9s ease;
+    background-color: var(--dark-color);
+    pointer-events: auto;
+    z-index: 100;
+    position: relative;
 }
 
 .homepage-button:hover {
