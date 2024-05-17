@@ -1,0 +1,12 @@
+.picture {
+  width: 1fr;
+  margin: 0;
+  padding: 2rem;
+  background-color: #808b96;
+  border-radius: 20px;
+}
+.picture > img {
+  width: 600px;
+  height: 400px;
+  margin: 0;
+}
