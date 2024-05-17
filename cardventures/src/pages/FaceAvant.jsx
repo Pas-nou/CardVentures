@@ -38,14 +38,8 @@ function FaceAvant() {
           <input type="hidden" value={img} name="picture" />
           <button type="submit">validez le choix de votre photo</button>
         </form>
+            </div>
 
-
-      <div className="picture">
-      {picture.map((value) => (
-        <p key={value}><img src={value} /></p>
-      ))}
-
-      </div>
       <section>
         <article className="affich-picture">
           {images.map((value) => (
