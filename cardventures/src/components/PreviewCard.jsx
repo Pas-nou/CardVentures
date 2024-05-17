@@ -27,7 +27,7 @@ const { formData } = useContext(TextContext)
             <div className="carte-preview carte-preview-r">
                 <div className="preview-msg preview-msg-l">
                     <p className="p-msg">{formData.text}</p>
-                    <p className="p-name">{formData.identity}</p>
+                    <p className="p-name">{formData.dest}</p>
                 </div>
                 <div className="preview-msg preview-msg-r">
                     <img
@@ -35,7 +35,7 @@ const { formData } = useContext(TextContext)
                         src="..\src\assets\TIMBRE.webp"
                         alt="timbre"
                     />
-                    <p>{formData.dest}</p>
+                    <p>{formData.identity}</p>
                     <p className="p-addres">{formData.address}</p>
                 </div>
             </div>

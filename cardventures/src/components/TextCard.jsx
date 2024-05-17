@@ -37,7 +37,7 @@ function TextCard() {
         <div className="card-text">
             <div className="champs-msg">
                 <textarea
-                    placeholder="Votre message longueure maximum de 200 carractère... "
+                    placeholder="Votre message (200 caractères maximum) "
                     id="message-card"
                     name="text"
                     rows="15"
@@ -50,21 +50,21 @@ function TextCard() {
                 <input
                     className="input-text"
                     name="identity"
-                    placeholder="Nom destinataire..."
+                    placeholder="Destinataire"
                     maxLength="25"
                     onChange={handleForm}
                 />
                 <input
                     className="input-text"
                     name="address"
-                    placeholder="Adresse destinataire..."
+                    placeholder="Adresse"
                     maxLength="70"
                     onChange={handleForm}
                 />
                 <input
                     className="input-text"
                     name="dest"
-                    placeholder="Nom Expéditeur..."
+                    placeholder="Expéditeur"
                     maxLength="25"
                     onChange={handleForm}
                 />

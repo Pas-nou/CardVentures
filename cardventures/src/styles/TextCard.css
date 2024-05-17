@@ -15,21 +15,21 @@
 }
 
 #message-card {
-    background-color: beige;
+    background-color: var(--light-color);
 }
 
 textarea {
     resize: none;
-    height: 385px;
+    height: 250px;
+    width: 700px;
     max-width: 100%;
     font-size: 36px;
-    font-family: var(--principal-font);
 }
 
 .champs-text {
     display: flex;
     flex-direction: column;
-    gap: 45px;
+    gap: 20px;
 }
 
 .input-text {
@@ -37,11 +37,11 @@ textarea {
     flex-direction: column;
     justify-content: end;
     align-items: end;
-    font-size: 36px;
-    height: 60px;
+    font-size: 20px;
+    height: 40px;
+    width: 300px;
     border-radius: 10px;
     background-color: beige;
-    font-family: var(--principal-font);
 }
 
 .button {
@@ -61,4 +61,9 @@ textarea {
     color: var(--light-color);
     font-weight: 800px;
     font-style: bold;
+}
+
+.h2-face-arriere {
+    padding: 20px;
+    text-align: center;
 }

@@ -11,10 +11,11 @@
 .img-preview {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .carte-preview {
-    width: 622px;
+    width: 500px;
     min-height: 350px;
     background-color: var(--light-color);
     display: flex;
@@ -53,11 +54,11 @@
 }
 
 .preview-msg > p {
-    background-color: var(--light-color);
-}
+    overflow-wrap: break-word;}
 
 .p-msg {
-    padding: 60px;
+    padding: 0;
+    background: none;
 }
 
 .p-name {
