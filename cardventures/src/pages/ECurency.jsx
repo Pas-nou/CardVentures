@@ -1,4 +1,6 @@
 import "../styles/visualisation.css";
+import Footer from "../components/Footer";
+
 function ECurency() {
   return (
     <>
@@ -24,6 +26,7 @@ function ECurency() {
           <button type="submit">valider le paiement</button>
         </p>
       </form>
+      <Footer />
     </>
   );
 }
