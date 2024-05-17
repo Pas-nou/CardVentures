@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+
 import Paiement from "../components/Paiement";
 import PreviewCard from "../components/PreviewCard";
 
@@ -15,6 +16,22 @@ function Visualisation() {
       <Footer />
     </>
   );
+=======
+import transition from "../transition";
+import PreviewCard from "../components/PreviewCard";
+
+function Visualisation() {
+    return (
+        <>
+            <h2 className="h2-face-arriere ">Voici votre carte postale</h2>
+
+            <section className="visualisation-preview">
+                <PreviewCard />
+            </section>
+            <Footer />
+        </>
+    );
+
 }
 
-export default Visualisation;
+export default transition(Visualisation);

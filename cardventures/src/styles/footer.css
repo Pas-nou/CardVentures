@@ -6,13 +6,13 @@ footer {
     position: fixed;
     bottom: 0;
     gap: 100px;
-
     height: 100px;
-    background-color: var --(dark-color);
+    background-color: var(--dark-color);
     z-index: 2;
 }
 
 .footer-btn {
+    background-color: var(--dark-color);
     width: 311px;
     height: 70px;
     border-radius: 20px;
@@ -31,6 +31,6 @@ footer {
 
 .active {
     pointer-events: none;
-    filter: blur(1.5px);
+    color: grey;
+    display:none;
 }
-

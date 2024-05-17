@@ -1,4 +1,5 @@
 import { useState } from "react";
+import transition from "../transition";
 import TextCard from "../components/TextCard";
 import Footer from "../components/Footer";
 import PreviewCard from "../components/PreviewCard";
@@ -10,6 +11,7 @@ function FaceArriere() {
 
     return (
         <>
+            <h2 className="h2-face-arriere"> Etape 2 : Déconnectez et écrivez votre carte postale </h2>
             <PreviewCard
                 name={name}
                 adress={adress}
@@ -25,4 +27,4 @@ function FaceArriere() {
     );
 }
 
-export default FaceArriere;
+export default transition(FaceArriere);
