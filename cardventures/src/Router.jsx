@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import FaceAvant from "./pages/FaceAvant";
 import FaceArriere from "./pages/FaceArriere";
 import Visualisation from "./pages/Visualisation";
+import ECurency from "./pages/ECurency";
+import Confirmation from "./pages/Confirmation";
 
 const router = createBrowserRouter([
     {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
             {
                 path: "visualisation",
                 element: <AnimatePresence mode={'wait'}><Visualisation /></AnimatePresence>,
+            },
+            {
+                path: "e-curency",
+                element: <ECurency />,
+            },
+            {
+                path: "confirmation",
+                element: <Confirmation />,
             },
         ],
         errorElement: <h1>Oupsi, je crois qu'il y a une petite erreur !</h1>,

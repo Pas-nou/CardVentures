@@ -1,0 +1,24 @@
+p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color:#FFF;
+}
+
+.button-visualisation {
+  margin-bottom: 100px;
+}
+
+.button-visualisation >  button {
+  background: #808b96;
+  color: azure;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.button-visualisation >  button:hover {
+  background: azure;
+  color: #808b96;
+  cursor: pointer;
+}
+
+p > input{padding: 1rem; background: azure;border-radius: 1rem;}
