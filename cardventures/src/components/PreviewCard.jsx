@@ -1,6 +1,17 @@
+import { useContext } from "react";
+import { TextContext, NameContext, AddressContext, DestContext } from "../context/Context";
+
+
 import "../styles/preview-card.css";
 
+
 function PreviewCard() {
+    const { messageContext } = useContext(TextContext);
+const { nameContext } = useContext(NameContext);
+const { addressContext } = useContext(AddressContext);
+const { destContext } = useContext(DestContext);
+
+
     return (
         <section className="section-preview">
             <div className="carte-preview carte-preview-l">
@@ -13,8 +24,8 @@ function PreviewCard() {
 
             <div className="carte-preview carte-preview-r">
                 <div className="preview-msg preview-msg-l">
-                    <p className="p-msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus illum culpa sint. Possimus consequuntur eius repellendus ipsa aliquam, eveniet quia?</p>
-                    <p className="p-name">nom expé.</p>
+                    <p className="p-msg">{messageContext}</p>
+                    <p className="p-name">{nameContext}</p>
                 </div>
                 <div className="preview-msg preview-msg-r">
                     <img
@@ -22,8 +33,8 @@ function PreviewCard() {
                         src="..\src\assets\TIMBRE.webp"
                         alt="timbre"
                     />
-                    <p>nom dest.</p>
-                    <p className="p-addres">adressdthyjhdthyjtyukyilujdtyuk dest.</p>
+                    <p>{destContext}</p>
+                    <p className="p-addres">{addressContext}</p>
                 </div>
             </div>
         </section>
@@ -31,3 +42,4 @@ function PreviewCard() {
 }
 
 export default PreviewCard;
+// {message}

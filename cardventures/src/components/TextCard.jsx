@@ -1,22 +1,40 @@
 import { NavLink } from "react-router-dom";
-import { useContext, useState } from "react";
-import TextContext from "../context/Context";
+import { useContext } from "react";
+import {
+    TextContext,
+    NameContext,
+    AddressContext,
+    DestContext,
+} from "../context/Context";
 import "../styles/TextCard.css";
 
 function TextCard() {
     const { messageContext, setMessageContext } = useContext(TextContext);
-    const [message, setMessage] = useState("messageContext");
-    console.log("%c⧭", "color: #ff0000", messageContext);
+    const { nameContext, setNameContext } = useContext(NameContext);
+    const { addressContext, setAddressContext } = useContext(AddressContext);
+    const { destContext, setDestContext } = useContext(DestContext);
+
     const changeMsg = (event) => {
         setMessageContext(event.target.value);
-        setMessage(event.target.value);
     };
-    console.log(message);
+
+    const changeDest = (event) => {
+        setDestContext(event.target.value);
+    };
+
+    const changeAdress = (event) => {
+        setAddressContext(event.target.value);
+    };
+
+    const changeName = (event) => {
+        setNameContext(event.target.value);
+    };
+
     return (
         <div className="card-text">
             <div className="champs-msg">
                 <textarea
-                    placeholder="Votre message longueure maximum de 200 carractère "
+                    placeholder="Votre message longueure maximum de 200 carractère... "
                     id="message-card"
                     name="message card"
                     rows="15"
@@ -29,23 +47,23 @@ function TextCard() {
                 <input
                     className="input-text"
                     name="lastName, firstName"
-                    placeholder="Nom & Prénom dest."
+                    placeholder="Nom destinataire..."
                     maxLength="25"
-
+                    onChange={changeDest}
                 />
                 <input
                     className="input-text"
                     name="adress"
-                    placeholder="Adresse"
+                    placeholder="Adresse destinataire..."
                     maxLength="70"
-
+                    onChange={changeAdress}
                 />
                 <input
                     className="input-text"
                     name="lastName, firstName, sender"
-                    placeholder="Nom & Prénom Expé."
+                    placeholder="Nom Expéditeur..."
                     maxLength="25"
-
+                    onChange={changeName}
                 />
                 <NavLink to="/visualisation">
                     <button className="button"> Visualiser </button>
