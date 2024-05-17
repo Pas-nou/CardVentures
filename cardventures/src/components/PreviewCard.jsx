@@ -6,10 +6,12 @@ import "../styles/preview-card.css";
 
 
 function PreviewCard() {
-    const { messageContext } = useContext(TextContext);
-const { nameContext } = useContext(NameContext);
-const { addressContext } = useContext(AddressContext);
-const { destContext } = useContext(DestContext);
+//     const { messageContext } = useContext(TextContext);
+// const { nameContext } = useContext(NameContext);
+// const { addressContext } = useContext(AddressContext);
+// const { destContext } = useContext(DestContext);
+
+const { formData } = useContext(TextContext)
 
 
     return (
@@ -24,8 +26,8 @@ const { destContext } = useContext(DestContext);
 
             <div className="carte-preview carte-preview-r">
                 <div className="preview-msg preview-msg-l">
-                    <p className="p-msg">{messageContext}</p>
-                    <p className="p-name">{nameContext}</p>
+                    <p className="p-msg">{formData.text}</p>
+                    <p className="p-name">{formData.identity}</p>
                 </div>
                 <div className="preview-msg preview-msg-r">
                     <img
@@ -33,8 +35,8 @@ const { destContext } = useContext(DestContext);
                         src="..\src\assets\TIMBRE.webp"
                         alt="timbre"
                     />
-                    <p>{destContext}</p>
-                    <p className="p-addres">{addressContext}</p>
+                    <p>{formData.dest}</p>
+                    <p className="p-addres">{formData.address}</p>
                 </div>
             </div>
         </section>

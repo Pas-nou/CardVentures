@@ -9,26 +9,29 @@ import {
 import "../styles/TextCard.css";
 
 function TextCard() {
-    const { messageContext, setMessageContext } = useContext(TextContext);
-    const { nameContext, setNameContext } = useContext(NameContext);
-    const { addressContext, setAddressContext } = useContext(AddressContext);
-    const { destContext, setDestContext } = useContext(DestContext);
+    // const { messageContext, setMessageContext } = useContext(TextContext);
+    // const { nameContext, setNameContext } = useContext(NameContext);
+    // const { addressContext, setAddressContext } = useContext(AddressContext);
+    // const { destContext, setDestContext } = useContext(DestContext);
 
-    const changeMsg = (event) => {
-        setMessageContext(event.target.value);
-    };
+    // const changeMsg = (event) => {
+    //     setMessageContext(event.target.value);
+    // };
 
-    const changeDest = (event) => {
-        setDestContext(event.target.value);
-    };
+    // const changeDest = (event) => {
+    //     setDestContext(event.target.value);
+    // };
 
-    const changeAdress = (event) => {
-        setAddressContext(event.target.value);
-    };
+    // const changeAdress = (event) => {
+    //     setAddressContext(event.target.value);
+    // };
 
-    const changeName = (event) => {
-        setNameContext(event.target.value);
-    };
+    // const changeName = (event) => {
+    //     setNameContext(event.target.value);
+    // };
+
+
+    const { handleForm } = useContext(TextContext);
 
     return (
         <div className="card-text">
@@ -36,34 +39,34 @@ function TextCard() {
                 <textarea
                     placeholder="Votre message longueure maximum de 200 carractère... "
                     id="message-card"
-                    name="message card"
+                    name="text"
                     rows="15"
                     cols="50"
                     maxLength="200"
-                    onChange={changeMsg}
+                    onChange={handleForm}
                 ></textarea>
             </div>
             <div className="champs-text">
                 <input
                     className="input-text"
-                    name="lastName, firstName"
+                    name="identity"
                     placeholder="Nom destinataire..."
                     maxLength="25"
-                    onChange={changeDest}
+                    onChange={handleForm}
                 />
                 <input
                     className="input-text"
-                    name="adress"
+                    name="address"
                     placeholder="Adresse destinataire..."
                     maxLength="70"
-                    onChange={changeAdress}
+                    onChange={handleForm}
                 />
                 <input
                     className="input-text"
-                    name="lastName, firstName, sender"
+                    name="dest"
                     placeholder="Nom Expéditeur..."
                     maxLength="25"
-                    onChange={changeName}
+                    onChange={handleForm}
                 />
                 <NavLink to="/visualisation">
                     <button className="button"> Visualiser </button>
