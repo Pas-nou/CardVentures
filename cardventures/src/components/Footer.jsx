@@ -7,15 +7,15 @@ function Footer() {
         <footer>
             <NavLink to="/">
                 {" "}
-                <button className="footer-btn" >accueil</button>{" "}
+                <button className="footer-btn" >Accueil</button>{" "}
             </NavLink>
             <NavLink to="/face-avant">
                 {" "}
-                <button className="footer-btn">les images</button>{" "}
+                <button className="footer-btn">Les images</button>{" "}
             </NavLink>
             <NavLink to="/face-arriere">
                 {" "}
-                <button className="footer-btn">le texte</button>{" "}
+                <button className="footer-btn">Le texte</button>{" "}
             </NavLink>
         </footer>
     );
