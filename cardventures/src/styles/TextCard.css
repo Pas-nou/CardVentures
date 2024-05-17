@@ -1,37 +1,64 @@
 .card-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: var(--dark-color);
-  margin: 0;
-  padding: 210px;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:40px;
+    background-color: var(--dark-color);
+    align-items: end;
 }
 
 .champs-msg {
-  display: flex;
-  flex-direction: column;
-  height: 60%;
-  width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#message-card {
+    background-color: beige;
 }
 
 textarea {
-  resize: none;
-  min-width: 80%;
-  min-height: 400px;
-  max-width: 200px;
-  max-height: ;
+    resize: none;
+    height: 385px;
+    max-width: 100%;
+    font-size: 36px;
+    font-family: var(--principal-font);
 }
 
 .champs-text {
-  display: flex;
-  flex-direction: column;
-  height: 60%;
-  width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
 }
 
-button {
-  border-radius: 10px;
-  height: 20%;
-  width: 20%;
+.input-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    font-size: 36px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: beige;
+    font-family: var(--principal-font);
+}
+
+.button {
+    width: 311px;
+    height: 70px;
+    border-radius: 20px;
+    color: var(--dark-color);
+    font-size: 36px;
+    border: 2px solid var(--light-color);
+    transition: 0.25s;
+    background-color: var(--light-color);
+    margin-inline: end;
+}
+
+.button:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-weight: 800px;
+    font-style: bold;
 }

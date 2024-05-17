@@ -1,22 +1,13 @@
 import { Outlet } from "react-router-dom";
+import AppProvider from "./AppProvider";
 import "./App.css";
-import TextContext from "./context/Context";
-import { useState } from "react";
 
 function App() {
-  const [messageContext, setMessageContext] = useState("ici msg")
-  console.log(messageContext)
-  return (
-    <TextContext.Provider
-    value={{
-      messageContext: messageContext,
-      setMessageContext: setMessageContext,
-    }}
-    >
-      <Outlet />
-    </TextContext.Provider>
-
-  );
+    return (
+        <AppProvider>
+            <Outlet />
+        </AppProvider>
+    );
 }
 
 export default App;

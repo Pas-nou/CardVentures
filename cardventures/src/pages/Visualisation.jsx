@@ -1,5 +1,14 @@
-function Visualisation(){
-    return<h1>coucou Visualisation</h1>
+import Footer from "../components/Footer";
+import PreviewCard from "../components/PreviewCard";
+
+
+function Visualisation() {
+    return (
+        <>
+            <PreviewCard />
+            <Footer />
+        </>
+    );
 }
 
 export default Visualisation;

@@ -31,7 +31,5 @@ footer {
 
 .active {
     pointer-events: none;
-    color: rgb(170, 169, 169);
+    filter: blur(1.5px);
 }
-
-
