@@ -7,7 +7,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <RouterProvider router={Router} />
+     <RouterProvider router={Router}/>
     <App />
   </React.StrictMode>,
 )

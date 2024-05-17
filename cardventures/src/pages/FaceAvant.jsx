@@ -1,11 +1,16 @@
 import { useState } from "react";
 import { images } from "../data";
+import transition from "../transition";
 import Picture from "../components/Picture";
 import Text from "../components/Text";
+import useCurrentPath from "../components/UseCurrentPath";
+
 
 import Footer from "../components/Footer";
 import "../styles/face-avant.css";
 function FaceAvant() {
+  const currentPath = useCurrentPath();
+
   const min = Math.ceil(0);
   const max = Math.floor(images.length);
 
@@ -59,4 +64,4 @@ function FaceAvant() {
   );
 }
 
-export default FaceAvant;
+export default transition(FaceAvant);
