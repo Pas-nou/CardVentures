@@ -1,5 +1,4 @@
 .section-preview {
-    margin-top: 50px;
     margin-bottom: 50px;
     width: 100vw;
     display: flex;
@@ -57,7 +56,8 @@
     overflow-wrap: break-word;}
 
 .p-msg {
-    padding: 0;
+    padding-left: 100px;
+    /* margin-right: 10; */
     background: none;
 }
 
@@ -67,6 +67,7 @@
 }
 
 .p-addres{
+    margin-top: 30px;
     width: 100px;
 }
 
@@ -74,10 +75,22 @@
     width: 90px;
     position: absolute;
     top: 70px;
-    right: 400px;
-    /* display: none; */
+    right: 438px;    
+}
+
+.timbre1 {
+    width: 90px;
+    position: absolute;
+    top: 200px;
+    right: 438px;    
 }
 
 p{
     overflow-wrap: break-word;
+}
+
+
+
+.visualisation-preview{
+    margin-top: 128px;
 }
